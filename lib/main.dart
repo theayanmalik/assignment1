@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:full_screen_image/full_screen_image.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -11,27 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'INDIA',
+      title: 'Flutter Demo',
       theme: ThemeData(
-
-
-
-
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a blue toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
@@ -62,8 +43,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 
-  List <String> imagesList = [ 
-    
+  List <String> imagesList = [
+
     'https://media.istockphoto.com/id/1288854112/vector/large-group-of-people-forming-india-map-standing-together-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=3B4zqlNK3u_BUOGr6A69z5jeAYRa0-_H6QWl3pLEsn8=' ,
     'https://images.unsplash.com/photo-1631194758628-71ec7c35137e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80',
     'https://media.istockphoto.com/id/845126892/photo/group-of-happy-gypsy-indian-children-desert-village-india.jpg?s=612x612&w=0&k=20&c=3Kd0tTudpaYuSAYpspvx_bIWwZVk1Z19GZZZNWdxKMk=',
@@ -74,15 +55,9 @@ class _MyHomePageState extends State<MyHomePage> {
   ];
 
 
-
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
+
     return Scaffold(
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
@@ -93,48 +68,34 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center( 
-
+      body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-
-        child:FullScreenWidget(child:imagesList , disposeLevel: disposeLevel)
-      )
-      );
-
-  }
-}
-
-class NewWidget extends StatelessWidget {
-  const NewWidget({
-    super.key,
-    required this.imagesList,
-  });
-
-  final List<String> imagesList;
-
-  @override
-  Widget build(BuildContext context) {
-    return GridView.builder(
-      
-
-        itemCount: imagesList.length ,
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10 , ), itemBuilder:(content, index) {
-      return Container(
+          child: GridView.builder(
 
 
-          decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15.0),
-      image: DecorationImage(
-      image: NetworkImage(imagesList[index]),
-      fit: BoxFit.cover,
+              itemCount: imagesList.length ,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10 , ), itemBuilder:(content, index) {
+            return Container(
+
+
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15.0),
+                  image: DecorationImage(
+                    image: NetworkImage(imagesList[index]),
+                    fit: BoxFit.cover
+                    ,
 
 
 
-      )),
-      );
-    });
+
+                  )),
+            );
+          })
+      ),
+
+    );
   }
 }
