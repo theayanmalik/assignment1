@@ -51,6 +51,15 @@ class _MyHomePageState extends State<MyHomePage> {
     'https://media.istockphoto.com/id/1417407351/photo/traditional-indian-cuisine-assorted-indian-food-on-table-in-restaurant-appetizers-and-dishes.jpg?b=1&s=170667a&w=0&k=20&c=Wn3LZQH0bOTs0PvY8QUpM20LJIIu7XDgoEjvN0UJfUM=',
     'https://images.unsplash.com/photo-1571893652827-a3e071ab463b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fElORElBTiUyMENVTFRVUkV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60',
     'https://images.unsplash.com/photo-1463592177119-bab2a00f3ccb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8SU5ESUFOJTIwQ1VMVFVSRXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60',
+    'https://images.pexels.com/photos/1721637/pexels-photo-1721637.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/797824/pexels-photo-797824.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/2780244/pexels-photo-2780244.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/1211968/pexels-photo-1211968.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/1722318/pexels-photo-1722318.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/15528021/pexels-photo-15528021/free-photo-of-cars-on-mumbai-street.jpeg?auto=compress&cs=tinysrgb&w=600'
+
+
+
 
   ];
 
